@@ -15,7 +15,7 @@ class Solution {
             // Otherwise add the remainder in the hashmap
             map.put(nums[i], i);
         }
-        // Return an empty array
+        // Return an empty array if no solution is found
         return new int[] {};
     }
 }
