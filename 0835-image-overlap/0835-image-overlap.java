@@ -1,47 +1,38 @@
-	class Solution {
+class Solution {
+        public int largestOverlap(int[][] img1, int[][] img2) {
 
-	    public int largestOverlap(int[][] img1, int[][] img2) {
+                int N = img1.length; 
 
-	        int n = img1.length;
+                int res = 0; 
 
-	        List<int[]> onesImg1 = new ArrayList<>();
+                int[][] Ones1 = new int[N * N][2]; 
+                int c1 = 0; 
 
-	        List<int[]> onesImg2 = new ArrayList<>();
+                int[][] Ones2 = new int[N * N][2]; 
+                int c2 = 0; 
 
-	        for (int i = 0; i < n; ++i) {
+                for (int r = 0; r < N; r += 1) {
+                        for (int c = 0; c < N; c += 1) {
+                                if (img1[r][c] == 1) {
+                                        Ones1[c1++] = new int[]{r, c}; 
+                                }
+                                if (img2[r][c] == 1) {
+                                        Ones2[c2++] = new int[]{r, c};  
+                                }
+                        }
+                }   
+                int[][] counter = new int[60][60]; 
 
-	            for (int j = 0; j < n; ++j) {
+                for (int i = 0; i < c1; i++) {
+                        for (int j = 0; j < c2; j++) {
+                                int dr = Ones2[j][0] - Ones1[i][0] + 30; 
+                                int dc = Ones2[j][1] - Ones1[i][1] + 30;    // 保证值非负:  
 
-	                if (img1[i][j] == 1) onesImg1.add(new int[]{i, j});
+                                counter[dr][dc]++; 
 
-	                if (img2[i][j] == 1) onesImg2.add(new int[]{i, j});
-
-	            }
-
-	        }
-
-	        Map<String, Integer> count = new HashMap<>();
-
-	        int res = 0;
-
-	        for (int[] p1 : onesImg1) {
-
-	            for (int[] p2 : onesImg2) {
-
-	                int dx = p2[0] - p1[0], dy = p2[1] - p1[1];
-
-	                String key = dx + "," + dy;
-
-	                count.put(key, count.getOrDefault(key, 0) + 1);
-
-	                res = Math.max(res, count.get(key));
-
-	            }
-
-	        }
-
-	        return res;
-
-	    }
-
-	}
+                                res = Math.max(res, counter[dr][dc]);  
+                        }
+                } 
+                return res; 
+        }
+}
