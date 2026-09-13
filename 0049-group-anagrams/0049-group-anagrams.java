@@ -1,15 +1,30 @@
-public class Solution {
+import java.util.*;
+
+class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
-        Map<String, List<String>> res = new HashMap<>();
-        for (String s : strs) {
-            int[] count = new int[26];
-            for (char c : s.toCharArray()) {
-                count[c - 'a']++;
+
+        return new AbstractList<List<String>>() {
+            private List<List<String>> result;
+            @Override
+            public List<String> get(int index) {
+                if (result == null) init();
+                return result.get(index);
             }
-            String key = Arrays.toString(count);
-            res.putIfAbsent(key, new ArrayList<>());
-            res.get(key).add(s);
-        }
-        return new ArrayList<>(res.values());
+            @Override
+            public int size() {
+                if (result == null) init();
+                return result.size();
+            }
+
+            private void init() {
+                result = Arrays.stream(strs)
+                    .collect(Collectors.groupingBy(s -> {
+                        var k = s.toCharArray();
+                        Arrays.sort(k);
+                        return new String(k);
+                    }))
+                    .values().stream().toList();
+            }
+        };
     }
 }
