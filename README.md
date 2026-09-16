@@ -36,8 +36,21 @@ A collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0836-rectangle-overlap](https://github.com/Tuhin200655/Leetcode-Solutions/tree/master/0836-rectangle-overlap) |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/Tuhin200655/Leetcode-Solutions/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 ## Geometry
 |  |
 | ------- |
 | [0836-rectangle-overlap](https://github.com/Tuhin200655/Leetcode-Solutions/tree/master/0836-rectangle-overlap) |
+## Dynamic Programming
+|  |
+| ------- |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/Tuhin200655/Leetcode-Solutions/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
+## Combinatorics
+|  |
+| ------- |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/Tuhin200655/Leetcode-Solutions/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
+## Prefix Sum
+|  |
+| ------- |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/Tuhin200655/Leetcode-Solutions/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 <!---LeetCode Topics End-->
