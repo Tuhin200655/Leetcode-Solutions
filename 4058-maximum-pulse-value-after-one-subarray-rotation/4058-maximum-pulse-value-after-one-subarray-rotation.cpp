@@ -10,8 +10,6 @@ public:
         long long o = -1e18;
 
         for (int i = 0; i < n; i++) {
-
-            // Alternating prefix sum
             s += (i % 2 == 0 ? nums[i] : -nums[i]);
 
             if ((i + 1) % 2 == 0) {
@@ -20,15 +18,11 @@ public:
                 e = max(e, s);
 
             } else {
-
                 ans = min(s - o, ans);
                 o = max(o, s);
             }
         }
-
-        // Apply the best possible improvement
         s -= (2 * min(0LL, ans));
-
         return s;
     }
 };
