@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview!
 | [0049-group-anagrams](https://github.com/Tuhin200655/Leetcode-Solutions/tree/master/0049-group-anagrams) |
 | [0217-contains-duplicate](https://github.com/Tuhin200655/Leetcode-Solutions/tree/master/0217-contains-duplicate) |
 | [0835-image-overlap](https://github.com/Tuhin200655/Leetcode-Solutions/tree/master/0835-image-overlap) |
+| [3525-find-x-value-of-array-ii](https://github.com/Tuhin200655/Leetcode-Solutions/tree/master/3525-find-x-value-of-array-ii) |
 ## Hash Table
 |  |
 | ------- |
@@ -39,6 +40,7 @@ A collection of LeetCode questions to ace the coding interview!
 | [0836-rectangle-overlap](https://github.com/Tuhin200655/Leetcode-Solutions/tree/master/0836-rectangle-overlap) |
 | [1401-circle-and-rectangle-overlapping](https://github.com/Tuhin200655/Leetcode-Solutions/tree/master/1401-circle-and-rectangle-overlapping) |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/Tuhin200655/Leetcode-Solutions/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
+| [3525-find-x-value-of-array-ii](https://github.com/Tuhin200655/Leetcode-Solutions/tree/master/3525-find-x-value-of-array-ii) |
 ## Geometry
 |  |
 | ------- |
@@ -56,4 +58,8 @@ A collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/Tuhin200655/Leetcode-Solutions/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
+## Segment Tree
+|  |
+| ------- |
+| [3525-find-x-value-of-array-ii](https://github.com/Tuhin200655/Leetcode-Solutions/tree/master/3525-find-x-value-of-array-ii) |
 <!---LeetCode Topics End-->
